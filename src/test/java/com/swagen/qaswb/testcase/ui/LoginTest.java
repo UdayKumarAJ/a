@@ -8,7 +8,8 @@ public class LoginTest {
 	synchronized public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/webDriverBinaries/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+//		WebDriver driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		String title = driver.getTitle();
 		System.out.println(title);
